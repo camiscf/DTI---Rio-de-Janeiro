@@ -1,0 +1,8 @@
+streamlit>=1.30
+streamlit-folium>=0.18
+geopandas>=0.14
+shapely>=2.0
+folium>=0.15
+pandas>=2.0
+pyarrow>=14.0
+unidecode>=1.3
