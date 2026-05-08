@@ -662,7 +662,7 @@ with aba4:
     ]
     tabela_cluster["DTI"] = tabela_cluster["DTI"].round(1)
     tabela_cluster["IPS"] = tabela_cluster["IPS"].round(1)
-    tabela_cluster["Cobertura 400m"] = (sub["cobertura_400m"].values * 100).round(1)
+    tabela_cluster["Cobertura 400m"] = (sub["cobertura_400m"].astype(float) * 100).round(1)
 
     st.dataframe(
         tabela_cluster,
