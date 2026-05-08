@@ -637,10 +637,11 @@ with aba4:
     cor_sel = CORES_CLUSTERS[cluster_sel]
 
     st.markdown(
-        f"<div style='border-left:6px solid {cor_sel};padding:12px 16px;background:#f7f7f9;"
+        f"<div style='border-left:6px solid {cor_sel};padding:12px 16px;"
+        f"background:rgba(255,255,255,0.05);"
         f"border-radius:4px;margin:12px 0;'>"
-        f"<h4 style='margin:0 0 6px 0;'>{cluster_sel} — {NOMES_CLUSTERS[cluster_sel]}</h4>"
-        f"<p style='margin:0;'>{DESCRICOES_CLUSTERS[cluster_sel]}</p></div>",
+        f"<h4 style='margin:0 0 6px 0;color:inherit;'>{cluster_sel} — {NOMES_CLUSTERS[cluster_sel]}</h4>"
+        f"<p style='margin:0;color:inherit;'>{DESCRICOES_CLUSTERS[cluster_sel]}</p></div>",
         unsafe_allow_html=True,
     )
 
